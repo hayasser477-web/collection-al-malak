@@ -13,7 +13,7 @@ export default function ThankYou() {
           <Check size={34} />
         </span>
 
-        <span className="cart-eyebrow">CHANEZ COLLECTION</span>
+        <span className="cart-eyebrow">COLLECTION AL MALAK</span>
 
         <h1>شكرًا لطلبكِ</h1>
 

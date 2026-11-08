@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
   return (
     <main className="legal-page">
       <header className="legal-hero">
-        <span className="legal-eyebrow">CHANEZ COLLECTION</span>
+        <span className="legal-eyebrow">COLLECTION AL MALAK</span>
         <h1>سياسة الخصوصية</h1>
         <p>
           تُعد حماية بياناتكم الشخصية أولوية قصوى بالنسبة لنا.
@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2>1. المقدمة</h2>
           <p>
-            توضح هذه السياسة كيف تقوم Chanez Collection بجمع واستخدام وحماية
+            توضح هذه السياسة كيف تقوم COLLECTION AL MALAK بجمع واستخدام وحماية
             المعلوماات الشخصية لزوار وعملاء موقعها الإلكتروني.
           </p>
         </section>
@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2>4. حماية البيانات</h2>
           <p>
-            تتخذ Chanez Collection تدابير معقولة لحماية المعلومات الشخصية ضد
+            تتخذ COLLECTION AL MALAK تدابير معقولة لحماية المعلومات الشخصية ضد
             أي وصول أو استخدام أو إفصاح غير مصرح به.
           </p>
         </section>

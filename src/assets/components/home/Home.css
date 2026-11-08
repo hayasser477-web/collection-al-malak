@@ -391,3 +391,63 @@
     transition: none;
   }
 }
+
+/* =================================
+   MOBILE SLIDESHOW BACKGROUND
+================================= */
+
+.home__mobile-background {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .home__desktop-background {
+    display: none;
+  }
+
+  .home__mobile-background {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .home__mobile-slide {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transform: scale(1);
+
+    transition:
+      opacity 1.5s ease-in-out,
+      transform 6s ease;
+
+    will-change: opacity, transform;
+  }
+
+  .home__mobile-slide.active {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+
+  .home__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .home__content,
+  .home__bottom {
+    position: relative;
+    z-index: 2;
+  }
+}

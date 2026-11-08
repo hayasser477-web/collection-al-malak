@@ -25,7 +25,7 @@ export default function PetalFall() {
             "--petal-drift": petal.drift,
           }}
         >
-          🌸
+          🌹🌻
         </span>
 
       ))}

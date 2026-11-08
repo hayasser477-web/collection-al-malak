@@ -7,7 +7,7 @@ export default function LegalNotices() {
     <main className="legal-page" dir="rtl">
       <header className="legal-hero">
         <span className="legal-eyebrow">
-          CHANEZ COLLECTION
+          COLLECTION AL MALAK
         </span>
 
         <h1>المعلومات القانونية</h1>
@@ -22,7 +22,7 @@ export default function LegalNotices() {
           <h2>1. التعريف بالموقع</h2>
 
           <p>
-            يهدف موقع Chanez Collection إلى عرض المنتجات
+            يهدف موقع COLLECTION AL MALAK إلى عرض المنتجات
             وتوفير المعلومات المتعلقة بها، وتمكين الزوار
             من الاطلاع على المجموعة والتواصل بشأن الطلبات
             والاستفسارات.
@@ -170,7 +170,7 @@ export default function LegalNotices() {
           <p>
             لأي استفسار يتعلق باستخدام الموقع أو محتواه
             أو المعلومات القانونية الواردة في هذه الصفحة،
-            يمكن التواصل مع إدارة Chanez Collection عبر
+            يمكن التواصل مع إدارة COLLECTION AL MALAK عبر
             وسائل الاتصال المتاحة على الموقع.
           </p>
         </section>

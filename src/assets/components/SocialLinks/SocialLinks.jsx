@@ -1,6 +1,5 @@
 
 import {
-  FaFacebookF,
   FaInstagram,
   FaTiktok,
 } from "react-icons/fa";
@@ -10,21 +9,14 @@ const socialLinks = [
   {
     name: "Instagram",
     description: "اكتشفي أحدث إطلالاتنا",
-    url: "https://www.instagram.com/_chanez_collection/",
+    url: "https://www.instagram.com/collection_al_malak/",
     icon: <FaInstagram />,
     className: "instagram",
   },
   {
-    name: "Facebook",
-    description: "كوني قريبة من عالمنا",
-    url: "https://www.facebook.com/chanez.collection?locale=ar_AR",
-    icon: <FaFacebookF />,
-    className: "facebook",
-  },
-  {
     name: "TikTok",
     description: "شاهدي مجموعتنا بطريقة مختلفة",
-    url: "https://www.tiktok.com/@chanezcollection",
+    url: "https://www.tiktok.com/@collection.al.malak",
     icon: <FaTiktok />,
     className: "tiktok",
   },
@@ -35,7 +27,7 @@ export default function SocialLinks() {
     <section className="social-links" id="contact" dir="rtl">
       <div className="social-links__container">
         <span className="social-links__eyebrow">
-          CHANEZ COLLECTION
+          COLLECTION AL MALAK
         </span>
 
         <h2 className="social-links__title">

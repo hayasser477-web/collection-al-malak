@@ -37,7 +37,7 @@ export default function FAQ() {
     <section className="faq" id="faq" dir="rtl">
       <div className="faq__container">
         <div className="faq__heading">
-          <span className="faq__eyebrow">CHANEZ COLLECTION</span>
+          <span className="faq__eyebrow">COLLECTION AL MALAK</span>
 
           <h2 className="faq__title">أسئلة تستحق الإجابة</h2>
 
@@ -118,7 +118,7 @@ export default function FAQ() {
                     <p>{item.answer}</p>
 
                     <span className="faq__page-decoration">
-                      CHANEZ COLLECTION
+                      COLLECTION AL MALAK
                     </span>
                   </div>
                 </div>

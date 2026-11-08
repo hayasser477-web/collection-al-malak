@@ -29,7 +29,7 @@ export default function CTA() {
 
       <div className="cta__content">
         <p className="cta__eyebrow">
-          CHANEZ COLLECTION
+         COLLECTION AL MALAK
         </p>
 
         <h2 className="cta__title">

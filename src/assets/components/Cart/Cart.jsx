@@ -1,7 +1,7 @@
 
 import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, ArrowRight, MapPin, Minus, Plus, ShoppingBag, Trash2, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, MapPin, Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
 import "./Cart.css";
 
 const WILAYAS = [
@@ -214,11 +214,10 @@ const total =
     saveCart(cart.filter((_, itemIndex) => itemIndex !== index));
   }
 
-  async function submitOrder(event) {
-  event.preventDefault();
+  function submitOrder(event) {
+    event.preventDefault();
 
-  if (isSubmitting) return;
-  setIsSubmitting(true);
+    if (isSubmitting) return;
 
     if (!cart.length) {
       setError("سلتك فارغة. أضيفي المنتجات أولًا.");
@@ -239,79 +238,52 @@ const total =
       setError("رقم الهاتف يجب أن يتكوّن من 10 أرقام بالضبط.");
       return;
     }
-   if (deliveryFee === null || deliveryFee === undefined) {
-  setError(
-    "عذرًا، سعر التوصيل لهذه الولاية أو الطريقة غير متوفر حاليًا."
-  );
-  setIsSubmitting(false);
-  return;
-}
+
+    if (deliveryFee === null || deliveryFee === undefined) {
+      setError(
+        "عذرًا، سعر التوصيل لهذه الولاية أو الطريقة غير متوفر حاليًا."
+      );
+      return;
+    }
 
     const order = {
       ...form,
       items: cart.map((item) => ({
-  ...item,
-  model: Number(item.model) || Number(String(item.productId || "").split("-")[1]) || 1,
-})),
+        ...item,
+        model:
+          Number(item.model) ||
+          Number(String(item.productId || "").split("-")[1]) ||
+          1,
+      })),
       productsTotal,
       deliveryFee,
       total,
       createdAt: new Date().toISOString(),
     };
 
-    setError("");
+    try {
+      setIsSubmitting(true);
+      setError("");
 
-    // حفظ مؤقت محليًا. هذا لا يرسل الطلب إلى صاحب المتجر.
-    const API_URL =
-  "https://script.google.com/macros/s/AKfycbwiWIgz9j_mXv1Pf2HDlevXbSbemzSNKHjr6Pje6Npuy7O1ygSDWBURzm93IpxJqoafcQ/exec";
+      // حفظ الطلب محليًا في المتصفح فقط، دون إرساله إلى أي خدمة خارجية.
+      localStorage.setItem("chanez_last_order", JSON.stringify(order));
 
-try {
-  const response = await fetch(API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "text/plain;charset=utf-8",
-    },
-    body: JSON.stringify({
-      first_name: form.firstName,
-      last_name: form.lastName,
-      phone: form.phone,
-      wilaya: form.wilaya,
-      municipality: form.municipality,
-      delivery_type: form.delivery,
-      items: cart,
-      productsTotal,
-      deliveryFee,
-      total,
-      note: form.note,
-    }),
-  });
+      // تفريغ سلة الموقع بعد حفظ تفاصيل الطلب محليًا.
+      localStorage.removeItem("chanez_cart");
+      setCart([]);
 
-  const result = await response.json();
-
-  if (!response.ok || !result.success) {
-    throw new Error("تعذّر حفظ الطلب");
-  }
-
- localStorage.setItem("chanez_last_order", JSON.stringify(order));
-
-// تفريغ السلة بعد نجاح حفظ الطلب
-localStorage.removeItem("chanez_cart");
-setCart([]);
-
-navigate("/thank-you");
-} catch (error) {
-  console.error("Order submission failed:", error);
-  setError("لم نتمكن من إرسال طلبك. يرجى المحاولة مرة أخرى.");
-  setIsSubmitting(false);
-}
-
-  
+      navigate("/thank-you");
+    } catch (error) {
+      console.error("Order saving failed:", error);
+      setError("تعذّر حفظ تفاصيل الطلب على هذا الجهاز. يرجى المحاولة مرة أخرى.");
+      setIsSubmitting(false);
+    }
   }
 
   return (
     <main className="cart-page" dir="rtl">
       <header className="cart-header">
-        <span className="cart-eyebrow">CHANEZ COLLECTION</span>
+        <span className="cart-eyebrow">COLLECTION AL MALAK</span>
         <h1>إتمام الطلب</h1>
         <p>بقيت خطوة واحدة لتصلكِ اختياراتكِ المميزة</p>
         <span className="cart-header-line" />
@@ -357,7 +329,7 @@ navigate("/thank-you");
 
                   <div className="cart-item-info">
                     <span className="cart-item-model">
-                      CHANEZ COLLECTION
+                      COLLECTION AL MALAK
                     </span>
                     <h3>{item.color || `الموديل ${item.model}`}</h3>
                     <p>المقاس: {item.size || "M"}</p>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../images/logo.webp";
+import img from "../../images/img (11).webp";
 
 const links = [
   { label: "الرئيسية", href: "/", section: "home" },
@@ -66,24 +67,25 @@ export default function Navbar() {
         </Link>
 
         <nav
-          className={`navbar__links ${
-            menuOpen ? "navbar__links--open" : ""
-          }`}
-          aria-label="القائمة الرئيسية"
-        >
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              className="navbar__link"
-              onClick={(event) =>
-                handleSectionClick(event, link.section)
-              }
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+  className={`navbar__links ${
+    menuOpen ? "navbar__links--open" : ""
+  }`}
+  aria-label="القائمة الرئيسية"
+  style={{ "--mobile-menu-bg": `url("${img}")` }}
+>
+  {links.map((link) => (
+    <Link
+      key={link.href}
+      to={link.href}
+      className="navbar__link"
+      onClick={(event) =>
+        handleSectionClick(event, link.section)
+      }
+    >
+      {link.label}
+    </Link>
+  ))}
+</nav>
 
         <div className="navbar__actions">
           <button

@@ -64,8 +64,8 @@ export default function Footer() {
             className="footer__logo"
             onClick={(event) => goToSection(event, "home")}
           >
-            <span className="footer__logo-main">CHANEZ</span>
-            <span className="footer__logo-sub">COLLECTION</span>
+            <span className="footer__logo-main">COLLECTION</span>
+            <span className="footer__logo-sub">AL MALAK</span>
           </a>
 
           <p className="footer__tagline">
@@ -88,7 +88,7 @@ export default function Footer() {
               loading="lazy"
             />
             <span className="footer__product-label">
-              CHANEZ COLLECTION
+              COLLECTION AL MALAK
             </span>
           </div>
         </div>
@@ -167,7 +167,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="footer__bottom">
         <p className="footer__copyright">
-          © {currentYear} CHANEZ COLLECTION.
+          © {currentYear} COLLECTION AL MALAK.
           Tous droits réservés.
         </p>
 

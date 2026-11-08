@@ -59,8 +59,7 @@ useEffect(() => {
         <span className="intro__eyebrow">
           A WORLD OF ELEGANCE
         </span>
-
-        <h1 className="intro__title">CHANEZ</h1>
+        <h1 className="intro__title">COLLECTION</h1>
 
         <div className="intro__divider" aria-hidden="true">
           <span />
@@ -68,7 +67,7 @@ useEffect(() => {
           <span />
         </div>
 
-        <p className="intro__collection">COLLECTION 👑 </p>
+        <p className="intro__collection">AL MALAK</p>
 
         <span className="intro__subtitle">
           TIMELESS BEAUTY · EXCEPTIONAL STYLE
