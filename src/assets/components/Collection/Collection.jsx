@@ -54,14 +54,17 @@ const imageList = [
 
 // بيانات أولية قابلة للتعديل.
 // كل صورة مستقلة إلى أن نحدد الصور التي تخص اللون نفسه.
+
 const legacyProducts = [
   {
     id: "malak-1",
     model: "1 la robe kabyle",
     color: "rose clair",
     price: 4000,
-description:
-  "La robe kabyle\nالفستان القبائلي باللون الزهري\nقماش كراب\nالسعر 4000 دج مع الحزام",
+    description: `La robe kabyle
+الفستان القبائلي باللون الزهري
+قماش كراب
+السعر 4000 دج مع الحزام`,
     sizes: ["38-40", "42-44", "46-48"],
     images: [image4, image30, image31],
   },
@@ -70,8 +73,10 @@ description:
     model: "1 la robe kabyle",
     color: "rouge brique",
     price: 4000,
-description:
-  "La robe kabyle\nالفستان القبائلي باللون الزهري\nقماش كراب\nالسعر 4000 دج مع الحزام",
+    description: `La robe kabyle
+الفستان القبائلي باللون الزهري
+قماش كراب
+السعر 4000 دج مع الحزام`,
     sizes: ["38-40", "42-44", "46-48"],
     images: [image1, image2, image32],
   },
@@ -80,8 +85,9 @@ description:
     model: "2 caftan royal",
     color: "rose fonce",
     price: 9000,
-description:
-  "قفطان 'أميرة' محبوب العرايس عاودتهولكم مع بعض التعديلات 😍😍🥰\nشوفولي اللون الملكي وتفاصيل المودال الراقية 😌😌\nيصلح لكل مناسباتكم خطوبة عرس وليمة…",
+    description: `قفطان 'أميرة' محبوب العرايس عاودتهولكم مع بعض التعديلات 😍😍🥰
+شوفولي اللون الملكي وتفاصيل المودال الراقية 😌😌
+يصلح لكل مناسباتكم خطوبة عرس وليمة…`,
     sizes: ["38-40", "42-44", "46-48"],
     images: [image10, image11, image18, image19],
   },
@@ -90,8 +96,9 @@ description:
     model: "2 caftan royal",
     color: "rose clear",
     price: 9000,
-    description:
-  "قفطان 'أميرة' محبوب العرايس عاودتهولكم مع بعض التعديلات 😍😍🥰\nشوفولي اللون الملكي وتفاصيل المودال الراقية 😌😌\nيصلح لكل مناسباتكم خطوبة عرس وليمة…",
+    description: `قفطان 'أميرة' محبوب العرايس عاودتهولكم مع بعض التعديلات 😍😍🥰
+شوفولي اللون الملكي وتفاصيل المودال الراقية 😌😌
+يصلح لكل مناسباتكم خطوبة عرس وليمة…`,
     sizes: ["38-40", "42-44", "46-48"],
     images: [image9, image17],
   },
@@ -100,8 +107,12 @@ description:
     model: "3 Robe d’hôtesse tulipe",
     color: "rouge brique",
     price: 4600,
-description:
-  "Robe d’hôtesse tulipe\nصُمم خصيصاً لمحبات البساطة والأناقة 😉🥰\nالمقاسات (M / L / XL)\nالعارضة لابسة M\nالسعر: 4200 DA فستان + محرمة الشعر\nتوصيل متوفر لكل الولايات",
+    description: `Robe d’hôtesse tulipe
+صُمم خصيصاً لمحبات البساطة والأناقة 😉🥰
+المقاسات (M / L / XL)
+العارضة لابسة M
+السعر: 4200 DA فستان + محرمة الشعر
+توصيل متوفر لكل الولايات`,
     sizes: ["38-40", "42-44", "46-48"],
     images: [image25, image26, image27, image32],
   },
@@ -110,18 +121,25 @@ description:
     model: "3 Robe d’hôtesse tulipe",
     color: "jaune",
     price: 4600,
-  description:
-  "Robe d’hôtesse tulipe\nصُمم خصيصاً لمحبات البساطة والأناقة 😉🥰\nالمقاسات (M / L / XL)\nالعارضة لابسة M\nالسعر: 4200 DA فستان + محرمة الشعر\nتوصيل متوفر لكل الولايات",
+    description: `Robe d’hôtesse tulipe
+صُمم خصيصاً لمحبات البساطة والأناقة 😉🥰
+المقاسات (M / L / XL)
+العارضة لابسة M
+السعر: 4200 DA فستان + محرمة الشعر
+توصيل متوفر لكل الولايات`,
     sizes: ["38-40", "42-44", "46-48"],
-    images: [image21, image22, image23,image24],
+    images: [image21, image22, image23, image24],
   },
   {
     id: "malak-7",
-    model: "4 Robe d’hôtesse victoria" ,
+    model: "4 Robe d’hôtesse victoria",
     color: "Burgundy",
     price: 4500,
-description:
-  "⚜️ Robe d’hôtesse « Victoria » en bordeaux\n🔱 فستان فكتوريا مستوحى من بساطة العصر الفيكتوري\nمصنوع من قماش مخملي ناعم.\nمصمم لكل امرأة تعشق البساطة والأناقة في نفس الوقت 🥰🥰\nمتوفر في المقاسات: M (38/40) L (40/42) XL (44/46)",
+    description: `⚜️ Robe d’hôtesse « Victoria » en bordeaux
+🔱 فستان فكتوريا مستوحى من بساطة العصر الفيكتوري
+مصنوع من قماش مخملي ناعم.
+مصمم لكل امرأة تعشق البساطة والأناقة في نفس الوقت 🥰🥰
+متوفر في المقاسات: M (38/40) L (40/42) XL (44/46)`,
     sizes: ["38-40", "42-44", "46-48"],
     images: [image12, image14, image20],
   },
@@ -130,8 +148,11 @@ description:
     model: "4 Robe d’hôtesse victoria",
     color: "noir",
     price: 4500,
-   description:
-  "⚜️ Robe d’hôtesse « Victoria » en bordeaux\n🔱 فستان فكتوريا مستوحى من بساطة العصر الفيكتوري\nمصنوع من قماش مخملي ناعم.\nمصمم لكل امرأة تعشق البساطة والأناقة في نفس الوقت 🥰🥰\nمتوفر في المقاسات: M (38/40) L (40/42) XL (44/46)",
+    description: `⚜️ Robe d’hôtesse « Victoria » en bordeaux
+🔱 فستان فكتوريا مستوحى من بساطة العصر الفيكتوري
+مصنوع من قماش مخملي ناعم.
+مصمم لكل امرأة تعشق البساطة والأناقة في نفس الوقت 🥰🥰
+متوفر في المقاسات: M (38/40) L (40/42) XL (44/46)`,
     sizes: ["38-40", "42-44", "46-48"],
     images: [image13, image15, image16],
   },
@@ -140,12 +161,16 @@ description:
     model: "5 robe aryam",
     color: "jean",
     price: 4000,
-  description:
-  "فستان أريام\nمخصص لكل مناسباتكم وعرضاتكم\nقماش فيبران ذو جودة عالية\nالمقاسات M / L / XL\nكمية محدودة سارعوا بالطلب",
+    description: `فستان أريام
+مخصص لكل مناسباتكم وعرضاتكم
+قماش فيبران ذو جودة عالية
+المقاسات M / L / XL
+كمية محدودة سارعوا بالطلب`,
     sizes: ["38-40", "42-44", "46-48"],
     images: [image5, image6, image7, image8],
   },
 ];
+
 
 
 function formatPrice(price) {
