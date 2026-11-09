@@ -60,8 +60,8 @@ const legacyProducts = [
     model: "1 la robe kabyle",
     color: "rose clair",
     price: 4000,
-    description:
-      "قطعة أنيقة من COLLECTION AL MALAK تجمع بين جمال التصميم والاهتمام بالتفاصيل.",
+description:
+  "La robe kabyle\nالفستان القبائلي باللون الزهري\nقماش كراب\nالسعر 4000 دج مع الحزام",
     sizes: ["38-40", "42-44", "46-48"],
     images: [image4, image30, image31],
   },
@@ -70,8 +70,8 @@ const legacyProducts = [
     model: "1 la robe kabyle",
     color: "rouge brique",
     price: 4000,
-   description:
-      "قطعة أنيقة من COLLECTION AL MALAK تجمع بين جمال التصميم والاهتمام بالتفاصيل.",
+description:
+  "La robe kabyle\nالفستان القبائلي باللون الزهري\nقماش كراب\nالسعر 4000 دج مع الحزام",
     sizes: ["38-40", "42-44", "46-48"],
     images: [image1, image2, image32],
   },
@@ -80,8 +80,8 @@ const legacyProducts = [
     model: "2 caftan royal",
     color: "rose fonce",
     price: 9000,
-    description:
-      "قطعة أنيقة من COLLECTION AL MALAK تجمع بين جمال التصميم والاهتمام بالتفاصيل.",
+description:
+  "قفطان 'أميرة' محبوب العرايس عاودتهولكم مع بعض التعديلات 😍😍🥰\nشوفولي اللون الملكي وتفاصيل المودال الراقية 😌😌\nيصلح لكل مناسباتكم خطوبة عرس وليمة…",
     sizes: ["38-40", "42-44", "46-48"],
     images: [image10, image11, image18, image19],
   },
@@ -91,7 +91,7 @@ const legacyProducts = [
     color: "rose clear",
     price: 9000,
     description:
-      "قطعة أنيقة من COLLECTION AL MALAK تجمع بين جمال التصميم والاهتمام بالتفاصيل.",
+  "قفطان 'أميرة' محبوب العرايس عاودتهولكم مع بعض التعديلات 😍😍🥰\nشوفولي اللون الملكي وتفاصيل المودال الراقية 😌😌\nيصلح لكل مناسباتكم خطوبة عرس وليمة…",
     sizes: ["38-40", "42-44", "46-48"],
     images: [image9, image17],
   },
@@ -100,8 +100,8 @@ const legacyProducts = [
     model: "3 Robe d’hôtesse tulipe",
     color: "rouge brique",
     price: 4600,
-    description:
-      "قطعة أنيقة من COLLECTION AL MALAK تجمع بين جمال التصميم والاهتمام بالتفاصيل.",
+description:
+  "Robe d’hôtesse tulipe\nصُمم خصيصاً لمحبات البساطة والأناقة 😉🥰\nالمقاسات (M / L / XL)\nالعارضة لابسة M\nالسعر: 4200 DA فستان + محرمة الشعر\nتوصيل متوفر لكل الولايات",
     sizes: ["38-40", "42-44", "46-48"],
     images: [image25, image26, image27, image32],
   },
@@ -110,8 +110,8 @@ const legacyProducts = [
     model: "3 Robe d’hôtesse tulipe",
     color: "jaune",
     price: 4600,
-   description:
-      "قطعة أنيقة من COLLECTION AL MALAK تجمع بين جمال التصميم والاهتمام بالتفاصيل.",
+  description:
+  "Robe d’hôtesse tulipe\nصُمم خصيصاً لمحبات البساطة والأناقة 😉🥰\nالمقاسات (M / L / XL)\nالعارضة لابسة M\nالسعر: 4200 DA فستان + محرمة الشعر\nتوصيل متوفر لكل الولايات",
     sizes: ["38-40", "42-44", "46-48"],
     images: [image21, image22, image23,image24],
   },
@@ -120,8 +120,8 @@ const legacyProducts = [
     model: "4 Robe d’hôtesse victoria" ,
     color: "Burgundy",
     price: 4500,
-    description:
-      "قطعة أنيقة من COLLECTION AL MALAK تجمع بين جمال التصميم والاهتمام بالتفاصيل.",
+description:
+  "⚜️ Robe d’hôtesse « Victoria » en bordeaux\n🔱 فستان فكتوريا مستوحى من بساطة العصر الفيكتوري\nمصنوع من قماش مخملي ناعم.\nمصمم لكل امرأة تعشق البساطة والأناقة في نفس الوقت 🥰🥰\nمتوفر في المقاسات: M (38/40) L (40/42) XL (44/46)",
     sizes: ["38-40", "42-44", "46-48"],
     images: [image12, image14, image20],
   },
@@ -131,7 +131,7 @@ const legacyProducts = [
     color: "noir",
     price: 4500,
    description:
-      "قطعة أنيقة من COLLECTION AL MALAK تجمع بين جمال التصميم والاهتمام بالتفاصيل.",
+  "⚜️ Robe d’hôtesse « Victoria » en bordeaux\n🔱 فستان فكتوريا مستوحى من بساطة العصر الفيكتوري\nمصنوع من قماش مخملي ناعم.\nمصمم لكل امرأة تعشق البساطة والأناقة في نفس الوقت 🥰🥰\nمتوفر في المقاسات: M (38/40) L (40/42) XL (44/46)",
     sizes: ["38-40", "42-44", "46-48"],
     images: [image13, image15, image16],
   },
@@ -140,8 +140,8 @@ const legacyProducts = [
     model: "5 robe aryam",
     color: "jean",
     price: 4000,
-   description:
-      "قطعة أنيقة من COLLECTION AL MALAK تجمع بين جمال التصميم والاهتمام بالتفاصيل.",
+  description:
+  "فستان أريام\nمخصص لكل مناسباتكم وعرضاتكم\nقماش فيبران ذو جودة عالية\nالمقاسات M / L / XL\nكمية محدودة سارعوا بالطلب",
     sizes: ["38-40", "42-44", "46-48"],
     images: [image5, image6, image7, image8],
   },

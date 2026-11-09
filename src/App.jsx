@@ -6,6 +6,10 @@ import {
   useLocation,
 } from "react-router-dom";
 
+import { useState } from "react";
+
+import Intro from "./assets/components/Intro/Intro.jsx";
+
 import LuxuryBackground from "./assets/components/background/LuxuryBackground.jsx";
 import Navbar from "./assets/components/navbar/Navbar.jsx";
 import PetalFall from "./assets/components/petals/PetalFall.jsx";
@@ -25,13 +29,11 @@ import Collection from "./assets/components/Collection/Collection.jsx";
 import Cart from "./assets/components/Cart/Cart";
 import ThankYou from "./assets/components/Cart/ThankYou";
 
-
 function MainLayout() {
   return (
     <>
       <LuxuryBackground />
       <PetalFall />
-
       <div className="site-shell" dir="rtl">
         <Navbar />
         <Home />
@@ -51,7 +53,6 @@ function CollectionLayout() {
     <>
       <LuxuryBackground />
       <PetalFall />
-
       <div className="site-shell" dir="rtl">
         <Navbar />
         <Collection />
@@ -66,7 +67,6 @@ function CartLayout() {
   return (
     <>
       <LuxuryBackground />
-
       <div className="site-shell" dir="rtl">
         <Navbar />
         <Cart />
@@ -79,30 +79,25 @@ function CartLayout() {
 
 function AppContent() {
   const location = useLocation();
+  const [showIntro, setShowIntro] = useState(true);
 
   return (
-    <Routes location={location}>
-      <Route path="/" element={<MainLayout />} />
-      <Route path="/collection" element={<CollectionLayout />} />
-      <Route path="/cart" element={<CartLayout />} />
+    <>
+      {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
 
-      <Route path="/thank-you" element={<ThankYou />} />
-
-      <Route
-        path="/politique-confidentialite"
-        element={<PrivacyPolicy />}
-      />
-
-      <Route
-        path="/mentions-legales"
-        element={<LegalNotices />}
-      />
-
-      <Route path="/contact" element={<SocialLinks />} />
-
-
-      <Route path="*" element={<MainLayout />} />
-    </Routes>
+      <div style={{ display: showIntro ? "none" : "block" }}>
+        <Routes location={location}>
+          <Route path="/" element={<MainLayout />} />
+          <Route path="/collection" element={<CollectionLayout />} />
+          <Route path="/cart" element={<CartLayout />} />
+          <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/politique-confidentialite" element={<PrivacyPolicy />} />
+          <Route path="/mentions-legales" element={<LegalNotices />} />
+          <Route path="/contact" element={<SocialLinks />} />
+          <Route path="*" element={<MainLayout />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 

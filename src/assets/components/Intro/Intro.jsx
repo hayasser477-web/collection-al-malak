@@ -1,6 +1,7 @@
 
 import "./Intro.css";
 import { useEffect, useState } from "react";
+import logo from "../../images/logo.webp";
 
 const particles = Array.from({ length: 90 }, (_, i) => ({
   id: i,
@@ -15,25 +16,26 @@ const particles = Array.from({ length: 90 }, (_, i) => ({
 export default function Intro({ onComplete }) {
   const [isExiting, setIsExiting] = useState(false);
 
-useEffect(() => {
-  const exitTimer = setTimeout(() => {
-    setIsExiting(true);
-  }, 3000);
+  useEffect(() => {
+    const exitTimer = setTimeout(() => {
+      setIsExiting(true);
+    }, 3000);
 
-  const completeTimer = setTimeout(() => {
-    onComplete();
-  }, 3000);
+    const completeTimer = setTimeout(() => {
+      onComplete();
+    }, 3000);
 
-  return () => {
-    clearTimeout(exitTimer);
-    clearTimeout(completeTimer);
-  };
-}, [onComplete]);
+    return () => {
+      clearTimeout(exitTimer);
+      clearTimeout(completeTimer);
+    };
+  }, [onComplete]);
+
   return (
     <section
-  className={`intro ${isExiting ? "intro--exiting" : ""}`}
-  aria-label="مقدمة شانيز كولكشن"
->
+      className={`intro ${isExiting ? "intro--exiting" : ""}`}
+      aria-label="مقدمة شانيز كولكشن"
+    >
       <div className="intro__texture" />
       <div className="intro__glow" />
 
@@ -59,6 +61,13 @@ useEffect(() => {
         <span className="intro__eyebrow">
           A WORLD OF ELEGANCE
         </span>
+
+        <img
+          src={logo}
+          alt="AL MALAK Collection"
+          className="intro__logo"
+        />
+
         <h1 className="intro__title">COLLECTION</h1>
 
         <div className="intro__divider" aria-hidden="true">
